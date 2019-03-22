@@ -1,0 +1,13 @@
+{
+    "name": "PandoraTabs",
+    "version": "1.0",
+    "description": "Extending functionality to Pandora by adding quick search buttons for bass or guitar tabs",
+    "manifest_version": 2,
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.pandora.com/station/play/*"],
+            "js": ["pandora_tabs.js"]
+        }
+    ]
+}
